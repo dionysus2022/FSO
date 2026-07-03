@@ -1,0 +1,28 @@
+# =====================
+# Whitelist: only .m and .py source code
+# =====================
+# Exclude everything by default
+*
+
+# Allow traversing into subdirectories
+!*/
+
+# Allow only MATLAB and Python source files
+!*.m
+!*.py
+
+# Keep .gitignore itself
+!.gitignore
+
+# =====================
+# Explicit exclusions (even if above would allow)
+# =====================
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+.venv_cuda/
+venv/
+.idea/
+.vscode/
+.agents/
